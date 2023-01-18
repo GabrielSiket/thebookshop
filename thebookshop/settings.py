@@ -3,6 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+CSRF_TRUSTED_ORIGINS = ['https://8000-gabrielsike-thebookshop-i5hfwyfgvhq.ws-eu82.gitpod.io']
 
 
 SECRET_KEY = 'django-insecure-p^+*y0*g3y3+11+8pukul14t+v$y91m-#fm$1!m@_4_^d8tvqy'
