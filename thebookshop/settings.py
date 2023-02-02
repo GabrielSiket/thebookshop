@@ -3,7 +3,7 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-CSRF_TRUSTED_ORIGINS = ['https://8000-gabrielsike-thebookshop-i5hfwyfgvhq.ws-eu82.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-gabrielsike-thebookshop-i5hfwyfgvhq.ws-eu85.gitpod.io']
 
 
 SECRET_KEY = 'django-insecure-p^+*y0*g3y3+11+8pukul14t+v$y91m-#fm$1!m@_4_^d8tvqy'
@@ -105,6 +105,16 @@ MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Basket session ID
+BASKET_SESSION_ID = 'basket'
+
+# Stripe Payment
+# PUBLISHABLE_KEY = 'pk_test_51MCpLGKZvV2DXiNOu5SsTnM4LIt0ibQJcTTKAspNO7pygDQNpt35SrS7jttqWKrvmrt7SnIUqQsFK8UQI7ujWmCS00OfyfHQG7'
+# SECRET_KEY = 'sk_test_51MCpLGKZvV2DXiNOsWNxLDCP5eVi9V7TP1T5uSwWy5S8d9RicxdNc5qaJxl3V9U0oBdcFB2oKlD18TKx7uxqzKNH00KsOGSYTJ'
+# STRIPE_ENDPOINT_SECRET = ''
+# stripe listen --forward-to localhost:8000/payment/webhook/
+
 
 # Custom user model
 AUTH_USER_MODEL = 'account.UserBase'
