@@ -110,11 +110,9 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 BASKET_SESSION_ID = 'basket'
 
 # Stripe Payment
-# PUBLISHABLE_KEY = 'pk_test_51MCpLGKZvV2DXiNOu5SsTnM4LIt0ibQJcTTKAspNO7pygDQNpt35SrS7jttqWKrvmrt7SnIUqQsFK8UQI7ujWmCS00OfyfHQG7'
-# SECRET_KEY = 'sk_test_51MCpLGKZvV2DXiNOsWNxLDCP5eVi9V7TP1T5uSwWy5S8d9RicxdNc5qaJxl3V9U0oBdcFB2oKlD18TKx7uxqzKNH00KsOGSYTJ'
-# STRIPE_ENDPOINT_SECRET = ''
+os.environ.setdefault('STRIPE_PUBLISHABLE_KEY', 'pk_test_51MCpLGKZvV2DXiNOu5SsTnM4LIt0ibQJcTTKAspNO7pygDQNpt35SrS7jttqWKrvmrt7SnIUqQsFK8UQI7ujWmCS00OfyfHQG7')
+STRIPE_SECRET_KEY = 'sk_test_51MCpLGKZvV2DXiNOsWNxLDCP5eVi9V7TP1T5uSwWy5S8d9RicxdNc5qaJxl3V9U0oBdcFB2oKlD18TKx7uxqzKNH00KsOGSYTJ'
 # stripe listen --forward-to localhost:8000/payment/webhook/
-
 
 # Custom user model
 AUTH_USER_MODEL = 'account.UserBase'
